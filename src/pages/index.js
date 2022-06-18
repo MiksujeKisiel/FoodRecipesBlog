@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { Article } from '../components/articles/article'
+import { Articles } from '../components/articles/articles'
 import Header from '../components/header'
 
 const Wrapper = styled.div`
@@ -27,12 +27,13 @@ margin: 100px 0;
 
 
 function IndexPage({ data: { allGraphCmsPost } }) {
-  
   const hero = allGraphCmsPost.nodes.slice(0,1);
-  const line = allGraphCmsPost.nodes.slice(1,5)
+  const two = allGraphCmsPost.nodes.slice(1,5)
   const three = allGraphCmsPost.nodes.slice(5,7)
   const four = allGraphCmsPost.nodes.slice(7,11)
   const five = allGraphCmsPost.nodes.slice(11,14)
+
+
   return (
     <>
     <div className="mt-10 divide-y divide-gray-200">
@@ -43,11 +44,15 @@ function IndexPage({ data: { allGraphCmsPost } }) {
       The best food recipes in one place!
     </Title>
    <Wrapper>
-   {allGraphCmsPost.nodes.length > 0 && <Article posts={hero} type="hero" />}
-   {allGraphCmsPost.nodes.length > 0 && <Article posts={line} type="two" />}
-   {allGraphCmsPost.nodes.length > 0 && <Article posts={three} type="three" />}
-   {allGraphCmsPost.nodes.length > 0 && <Article posts={four} type="four" />}
-   {allGraphCmsPost.nodes.length > 0 && <Article posts={five} type="five" />}
+   {allGraphCmsPost.nodes.length > 0 && 
+   <>
+   <Articles posts={hero} type="hero" />
+   <Articles posts={two} type="two" />
+   <Articles posts={three} type="three" />
+   <Articles posts={four} type="four" />
+   <Articles posts={five} type="five" />
+   </>}
+
 </Wrapper>
 </div>
 </section>

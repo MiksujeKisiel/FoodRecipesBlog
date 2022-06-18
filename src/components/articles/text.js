@@ -31,16 +31,14 @@ const Title = styled.p`
     font-size: ${props =>
    props.type === "hero" && '28px' ||
    props.type === "two" && '16px' ||
-   props.type === "three" && '28px' ||
-   '14px'
+   props.type === "three" && '24px' ||
+   '18px'
    
  };
  @media (min-width: ${ 768}px) {
   margin: 15px 0;
   font-size: ${props =>
    props.type === "hero" && '34px' ||
-   props.type === "two" && '20px' ||
-   props.type === "three" && '16px' ||
    '17px'
   }
 }
@@ -52,27 +50,19 @@ font-size: 18px;
 letter-spacing: 0.5px;
 font-size: ${props =>
    props.type === "hero" && '18px' ||
-   props.type === "two" && '16px' ||
-   props.type === "three" && '18px' ||
-   '16px'
+   '15px'
+   
  };
+ margin-bottom: 10px;
   @media (min-width: ${ 768}px) {
 
 font-size: ${props =>
  props.type === "hero" && '20px' ||
- props.type === "two" && '18px' ||
- props.type === "three" && '16px' ||
+ props.type === "two" && '16px' ||
  '16px'
 }
 
 }
-@media (min-width: ${ 1280}px) {
-  font-size: ${props =>
- props.type === "hero" && '18px' ||
- props.type === "two" && '18px' ||
- props.type === "three" && '16px' ||
- '16px'
-}
-  }
+
 `
 

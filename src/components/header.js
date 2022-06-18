@@ -8,7 +8,7 @@ function Header() {
       <TextWrapper>
         <Title>The greatest cookbook of all time!</Title>
         <Text>MAKING HEALTHY TASTE GOOD</Text>
-        <StyledLink>
+        <StyledLink to="/">
           Learn more ❯
         </StyledLink>
       </TextWrapper>
@@ -58,4 +58,5 @@ color: white;
 font-weight: 500;
 margin-top: 40px;
 font-size: 20px;
+
 `

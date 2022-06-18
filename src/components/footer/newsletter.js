@@ -32,6 +32,9 @@ const Input = styled.input `
 border: none;
 border-bottom: black 1px solid;
 background-color: transparent;
+&:focus {
+  outline: none;
+}
 `
 const Label = styled.label `
 font-size: 13px;
