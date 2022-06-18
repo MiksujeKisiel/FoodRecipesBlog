@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 export const Text = ({title, excerpt, type
 }) =>
-
 {
   return ( 
     <Wrapper>
@@ -17,13 +16,11 @@ export const Text = ({title, excerpt, type
 );
 } 
 
-
 const Wrapper = styled.div `
 padding: 5px;
 align-self: flex-start;
 @media (min-width: ${ 768}px) {
   padding: 5px 10px;
-
 }
 
 `
@@ -46,13 +43,8 @@ const Title = styled.p`
    props.type === "three" && '16px' ||
    '17px'
   }
-
-  }
+}
   
-
-
-  
-
 `
 const Paragraph = styled.p`
 font-weight: 100;

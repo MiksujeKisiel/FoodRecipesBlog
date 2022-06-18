@@ -12,8 +12,6 @@ grid-column-gap: 15px;
 margin: 15px auto;
 max-width: 1100px;
 grid-row-gap: 20px;
-justify-items: stretch;
-align-items: stretch;
 
 @media (min-width: ${ 1024}px) {
 grid-template-columns: ${props =>
@@ -27,8 +25,6 @@ grid-template-columns: ${props =>
 `
 
 export function Article({posts, type}) {
-  console.log(posts)
-
   return ( 
   <ArticleWrapper type={type}>
 {posts.map((post) => {

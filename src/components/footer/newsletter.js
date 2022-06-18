@@ -1,39 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Footer() {
+export const Newsletter = () => {
   return (
     <Wrapper>
-      <Newsletter>
-        <Text>
-          SIGN UP FOR OUR NEWSLETTER</Text>
-        <InputWrapper>
-          <Label>Enter your email here *</Label>
-          <Input></Input>
-          <Button>subscribe</Button>
-        </InputWrapper>
-      </Newsletter>
-      <BottomText>
-        © 2022 By Sebastian Makowski. Proudly created with Gatsby & styled components
-      </BottomText>
+      <Text>
+        SIGN UP FOR OUR NEWSLETTER</Text>
+      <InputWrapper>
+        <Label>Enter your email here *</Label>
+        <Input></Input>
+        <Button>subscribe</Button>
+      </InputWrapper>
     </Wrapper>
+
   )
 }
 
-export default Footer
-
-const Wrapper = styled.footer `
-background-color: #d8cec0;
-height: 25vh;
-min-height: 300px;
-display: flex;
-justify-content: flex-end;
-align-items: center;
-flex-direction: column;
-margin-top: 100px;
-`
-
-const Newsletter = styled.div `
+const Wrapper = styled.div `
 justify-self: center;
 display: flex;
 flex-direction: column;
@@ -83,10 +66,4 @@ const InputWrapper = styled.div `
 display: flex;
 flex-direction: column;
 width: 200px;
-`
-
-const BottomText = styled.p `
-font-size: 11px;
-margin: 20px 0;
-justify-self: end;
 `
